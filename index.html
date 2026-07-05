@@ -3,43 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hubnutí v praxi | placený průvodce</title>
+    <title>IT.fit()_body | nástěnka</title>
     <meta
       name="description"
       content="Prolinkovaný placený průvodce pro lidi, kteří chtějí konečně začít hubnout, zesílit a rozvíjet postavu bez zbytečných extrémů."
     />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="hero" id="top">
       <nav class="nav" aria-label="Hlavní navigace">
-        <a class="brand" href="#top">FIT VAULT</a>
+        <a class="brand" href="#top">IT.fit()<span>_body</span></a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <div class="nav__links" id="nav-links">
-          <a href="#nastenka">Nástěnka</a>
-          <a href="lekce/nastaveni.html">Kcal kalkulačka</a>
-          <a href="lekce/jidlo.html">Jídlo</a>
-          <a href="lekce/trenink.html">Trénink</a>
-          <a href="#zamky">Placený obsah</a>
+          <a href="#nastenka">hub()</a>
+          <a href="lekce/nastaveni.html">kcal()</a>
+          <a href="lekce/jidlo.html">jidlo()</a>
+          <a href="lekce/trenink.html">trenink()</a>
+          <a href="#zamky">vault()</a>
         </div>
       </nav>
 
       <section class="hero__grid">
         <div>
-          <p class="eyebrow">Nový univerzální produkt mimo uVAULT IT FIT</p>
-          <h1>Jak konečně začít hubnout a rozvinout svoji postavu</h1>
+          <p class="eyebrow">ITFIT_BODY :: DASHBOARD</p>
+          <h1>body_rebuild()<span class="caret blink">_</span></h1>
           <p class="lead">
             Praktický webový průvodce pro začátečníky a mírně pokročilé: kalorie, kroky, silový trénink,
             spánek, evidence jídla a chytré využití AI. Bez chaosu, bez extrémů, s důrazem na měřitelný progres.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="#nastenka">Otevřít nástěnku</a>
-            <a class="button button--ghost" href="lekce/nastaveni.html">Spočítat kcal a živiny</a>
+            <a class="button button--primary" href="#kontrola">otevřít_nástěnku()</a>
+            <a class="button button--ghost" href="lekce/nastaveni.html">spočítat_kcal()</a>
           </div>
         </div>
         <aside class="score-card" aria-label="Rychlý přehled programu">
-          <span class="score-card__badge">MUST HAVE</span>
-          <h2>4 pilíře výsledku</h2>
+          <span class="score-card__badge">CORE</span>
+          <h2>protocol_stack()</h2>
           <ul>
             <li>Deficit bez hladovění</li>
             <li>Komplexní cviky místo izolací</li>
@@ -61,11 +65,48 @@
           </p>
         </div>
         <div class="dashboard__grid">
-          <a class="dashboard-card" href="lekce/nastaveni.html"><span>01</span><strong>Kcal + živiny</strong><small>Výdej, deficit, bílkoviny, tuky, sacharidy.</small></a>
-          <a class="dashboard-card" href="lekce/jidlo.html"><span>02</span><strong>Jídlo v praxi</strong><small>Jak vážit, zapisovat, číst etikety a plánovat.</small></a>
+          <a class="dashboard-card" href="lekce/nastaveni.html"><span>01</span><strong>kcal_makra()</strong><small>Výdej, deficit, bílkoviny, tuky, sacharidy.</small></a>
+          <a class="dashboard-card" href="lekce/jidlo.html"><span>02</span><strong>jidlo_aplikace()</strong><small>Kalorické tabulky, AI, etikety a plánování.</small></a>
           <a class="dashboard-card" href="lekce/trenink.html"><span>03</span><strong>Silový plán</strong><small>A/B trénink, progrese, technika a zátěž.</small></a>
-          <a class="dashboard-card" href="lekce/evidence.html"><span>04</span><strong>Evidence</strong><small>Váha, obvody, fotky, kroky a týdenní report.</small></a>
+          <a class="dashboard-card" href="lekce/evidence.html"><span>04</span><strong>evidence()</strong><small>Local storage, váha, obvody, fotky, kroky.</small></a>
           <a class="dashboard-card" href="lekce/regenerace.html"><span>05</span><strong>Regenerace</strong><small>Spánek, stres, suplementy a udržitelnost.</small></a>
+        </div>
+      </section>
+
+
+      <section class="section" id="kontrola">
+        <div class="section__intro">
+          <p class="eyebrow">LOCAL_STORAGE :: DENNÍ KONTROLA</p>
+          <h2>Dnešní mise, návyky a rychlý zápis</h2>
+          <p>
+            Tohle je praktická nástěnka produktu: klient si uloží váhu, kroky, bílkoviny a odškrtne návyky.
+            Data zůstávají v prohlížeči přes localStorage, takže prototyp funguje i bez backendu.
+          </p>
+        </div>
+        <div class="habit-grid">
+          <form class="habit-card" id="daily-log-form">
+            <label>Ranní váha kg<input id="log-weight" type="number" step="0.1" placeholder="např. 84.6" /></label>
+            <label>Kroky dnes<input id="log-steps" type="number" step="100" placeholder="např. 8500" /></label>
+            <label>Bílkoviny g<input id="log-protein" type="number" placeholder="např. 155" /></label>
+            <label>Poznámka<textarea id="log-note" rows="3" placeholder="spánek, hlad, trénink, energie..."></textarea></label>
+            <button class="button button--primary" type="submit">uložit_dnešek()</button>
+          </form>
+          <aside class="habit-card">
+            <div class="tag">CHECKLIST</div>
+            <div class="habit-checks" id="habit-checks">
+              <label><input type="checkbox" data-habit="protein" /> bílkoviny splněny</label>
+              <label><input type="checkbox" data-habit="steps" /> kroky splněny</label>
+              <label><input type="checkbox" data-habit="training" /> trénink / chůze</label>
+              <label><input type="checkbox" data-habit="sleep" /> spánek 7h+</label>
+              <label><input type="checkbox" data-habit="tracked" /> zapsané jídlo</label>
+            </div>
+            <div class="macro-result" id="daily-summary">
+              <div><small>Váha</small><strong>—</strong><span>kg</span></div>
+              <div><small>Kroky</small><strong>—</strong><span>dnes</span></div>
+              <div><small>Protein</small><strong>—</strong><span>g</span></div>
+              <div><small>Návyky</small><strong>0/5</strong><span>splněno</span></div>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -237,9 +278,10 @@
     </main>
 
     <footer class="footer">
-      <p>© 2026 FIT VAULT · Vzdělávací obsah nenahrazuje lékařskou péči.</p>
+      <p>© 2026 IT.fit()<span>_body</span> · Vzdělávací obsah nenahrazuje lékařskou péči.</p>
       <a href="#top">Nahoru</a>
     </footer>
     <script src="app.js"></script>
+  <button id="toTop" aria-label="Zpět nahoru">↑</button>
   </body>
 </html>
