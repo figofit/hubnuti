@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubnutí v praxi | placený průvodce</title>
+    <meta
+      name="description"
+      content="Prolinkovaný placený průvodce pro lidi, kteří chtějí konečně začít hubnout, zesílit a rozvíjet postavu bez zbytečných extrémů."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav" aria-label="Hlavní navigace">
+        <a class="brand" href="#top">FIT VAULT</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <div class="nav__links" id="nav-links">
+          <a href="#start">Start</a>
+          <a href="#system">Systém</a>
+          <a href="#trenink">Trénink</a>
+          <a href="#jidlo">Jídlo</a>
+          <a href="#zamky">Placený obsah</a>
+        </div>
+      </nav>
+
+      <section class="hero__grid">
+        <div>
+          <p class="eyebrow">Nový univerzální produkt mimo uVAULT IT FIT</p>
+          <h1>Jak konečně začít hubnout a rozvinout svoji postavu</h1>
+          <p class="lead">
+            Praktický webový průvodce pro začátečníky a mírně pokročilé: kalorie, kroky, silový trénink,
+            spánek, evidence jídla a chytré využití AI. Bez chaosu, bez extrémů, s důrazem na měřitelný progres.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#start">Začít 7denním plánem</a>
+            <a class="button button--ghost" href="#zamky">Ukázat zamčené lekce</a>
+          </div>
+        </div>
+        <aside class="score-card" aria-label="Rychlý přehled programu">
+          <span class="score-card__badge">MUST HAVE</span>
+          <h2>4 pilíře výsledku</h2>
+          <ul>
+            <li>Deficit bez hladovění</li>
+            <li>Komplexní cviky místo izolací</li>
+            <li>Kroky a denní režim</li>
+            <li>Spánek, minerály, disciplína</li>
+          </ul>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section" id="start">
+        <div class="section__intro">
+          <p class="eyebrow">Start bez zkoušení naslepo</p>
+          <h2>První nastavení, které klientovi okamžitě řekne, co má dělat</h2>
+          <p>
+            Cílem není dát lidem další teorii. Cílem je přinutit je nastavit čísla, zapisovat realitu a po 14 dnech
+            upravit plán podle dat, ne podle pocitu po jednom horším víkendu.
+          </p>
+        </div>
+        <div class="cards cards--three">
+          <article class="card">
+            <span>01</span>
+            <h3>Kalorie</h3>
+            <p>Vypočítej udržovací příjem, nastav deficit 300–500 kcal a vysvětli, že 1 kg tuku je zhruba 8 000 kcal energie.</p>
+            <a href="#kalkulacka">Otevřít mini kalkulačku</a>
+          </article>
+          <article class="card">
+            <span>02</span>
+            <h3>Pohyb</h3>
+            <p>Začni kroky, ne trestem. Cíl je pravidelný výdej, který klient zvládne i v pracovním týdnu.</p>
+            <a href="#pohyb">Nastavit kroky</a>
+          </article>
+          <article class="card">
+            <span>03</span>
+            <h3>Silovka</h3>
+            <p>Komplexní cviky, postupné přidávání zátěže a svaly jako dlouhodobá investice do vyššího klidového výdeje.</p>
+            <a href="#trenink">Vybrat trénink</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="system">
+        <div class="section__intro">
+          <p class="eyebrow">Prolinkovaný systém</p>
+          <h2>Mapa placeného produktu</h2>
+          <p>Každý modul vede klienta na další krok. Web může fungovat jako členská zóna, kde se lekce postupně odemykají.</p>
+        </div>
+        <div class="timeline">
+          <a href="#kalkulacka"><strong>Modul 1:</strong> výpočet příjmu, deficit a tempo hubnutí</a>
+          <a href="#jidlo"><strong>Modul 2:</strong> potraviny, makra, evidence a AI kontrola jídelníčku</a>
+          <a href="#trenink"><strong>Modul 3:</strong> silový plán A/B pro celé tělo</a>
+          <a href="#regenerace"><strong>Modul 4:</strong> spánek, stres, vitamíny a minerály</a>
+          <a href="#report"><strong>Modul 5:</strong> týdenní vyhodnocení a úpravy bez paniky</a>
+        </div>
+      </section>
+
+      <section class="section calculator" id="kalkulacka">
+        <div>
+          <p class="eyebrow">Interaktivní mustr</p>
+          <h2>Mini kalkulačka deficitu</h2>
+          <p>
+            Klient zadá svůj odhad udržovacího příjmu a zvolí deficit. Výsledek mu ukáže denní cíl a realistický čas pro
+            spálení 1 kg tuku při konzistentním postupu.
+          </p>
+        </div>
+        <form class="calc" id="deficit-form">
+          <label>
+            Udržovací příjem kcal/den
+            <input id="maintenance" type="number" min="1200" max="6000" value="2600" />
+          </label>
+          <label>
+            Denní deficit kcal
+            <input id="deficit" type="number" min="100" max="1000" step="50" value="400" />
+          </label>
+          <button class="button button--primary" type="submit">Spočítat plán</button>
+          <output class="calc__result" id="calc-result">Cíl: 2 200 kcal/den. 1 kg tuku ≈ 20 dní při deficitu 400 kcal.</output>
+        </form>
+      </section>
+
+      <section class="section split" id="trenink">
+        <div>
+          <p class="eyebrow">Silovák, ne lehké mávání</p>
+          <h2>Komplexní cviky pro začátečníky a mírně pokročilé</h2>
+          <p>
+            Trénink má být jednoduchý, opakovatelný a progresivní. Ne stavěný na izolovaných strojích, ale na vzorech:
+            dřep, tah, tlak, přítah, nošení a střed těla.
+          </p>
+        </div>
+        <div class="workout-grid">
+          <article>
+            <h3>Trénink A</h3>
+            <ul>
+              <li>Dřep / leg press jako přechod</li>
+              <li>Bench press nebo klik</li>
+              <li>Přítah v předklonu / jednoručka</li>
+              <li>Rumunský mrtvý tah</li>
+              <li>Farmářská chůze</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Trénink B</h3>
+            <ul>
+              <li>Mrtvý tah technicky lehčí variantou</li>
+              <li>Tlak nad hlavu</li>
+              <li>Shyb / stahování kladky</li>
+              <li>Výpady nebo split squat</li>
+              <li>Plank a antirotace</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section nutrition" id="jidlo">
+        <div class="section__intro">
+          <p class="eyebrow">Jídlo bez magie</p>
+          <h2>Evidence potravin, makra a AI jako osobní kontrolor</h2>
+        </div>
+        <div class="cards cards--four">
+          <article class="card"><h3>Bílkoviny</h3><p>Každé hlavní jídlo má obsahovat zdroj bílkovin, aby se držela sytost a svalová hmota.</p></article>
+          <article class="card"><h3>Kalorie</h3><p>Zapisuj potraviny podle gramáže, ne podle odhadu “asi normální porce”.</p></article>
+          <article class="card"><h3>AI prompt</h3><p>Nech AI zkontrolovat denní zápis: chybí vláknina, bílkoviny, zelenina, nebo je problém v tekutých kaloriích?</p></article>
+          <article class="card"><h3>Mikroživiny</h3><p>Základ: vitamín D dle sezóny a krevních testů, hořčík, omega-3, sůl a pitný režim podle zátěže.</p></article>
+        </div>
+      </section>
+
+      <section class="section split" id="pohyb">
+        <div>
+          <p class="eyebrow">Denní výdej</p>
+          <h2>Kroky jsou pojistka, ne náhrada silovky</h2>
+          <p>
+            Pro běžného klienta nastav start na aktuální průměr + 1 500 kroků. Když zvládá 14 dní po sobě, přidej další
+            úroveň. Web může automaticky posílat týdenní úkoly a připomínky.
+          </p>
+        </div>
+        <div class="metric-card">
+          <strong>Startovací cíle</strong>
+          <span>6 000 kroků</span>
+          <span>8 000 kroků</span>
+          <span>10 000 kroků</span>
+        </div>
+      </section>
+
+      <section class="section section--dark" id="regenerace">
+        <div class="section__intro">
+          <p class="eyebrow">Regenerace rozhoduje</p>
+          <h2>Spánek, stres, vitamíny a minerály</h2>
+          <p>
+            Pokud klient spí 5 hodin, honí práci a víkendově přejídá deficit, plán se nerozbije kvůli genetice, ale kvůli
+            systému. Modul učí večerní rutinu, plán jídla a kontrolu energie v týdnu.
+          </p>
+        </div>
+      </section>
+
+      <section class="section locked" id="zamky">
+        <div class="section__intro">
+          <p class="eyebrow">Placeno / členská zóna</p>
+          <h2>Zamčené lekce připravené k prodeji</h2>
+        </div>
+        <div class="locked__grid">
+          <article class="locked-card"><span>🔒</span><h3>Startovní audit klienta</h3><p>Dotazník, vstupní fotky, míry, kroky a jídelní záznam.</p></article>
+          <article class="locked-card"><span>🔒</span><h3>14denní rozjezd</h3><p>Konkrétní úkoly na každý den, aby člověk nezačal moc ostře a neshořel.</p></article>
+          <article class="locked-card"><span>🔒</span><h3>AI jídelní mentor</h3><p>Hotové prompty pro vyhodnocení jídelníčku, nákupní seznam a náhrady potravin.</p></article>
+          <article class="locked-card"><span>🔒</span><h3>Týdenní report</h3><p>Šablona pro váhu, obvody, fotky, kroky, tréninky a rozhodnutí, zda upravit kalorie.</p></article>
+        </div>
+      </section>
+
+      <section class="section cta" id="report">
+        <p class="eyebrow">Další krok</p>
+        <h2>Hotový základ pro produkt, který můžeš dál naplnit lekcemi</h2>
+        <p>
+          Tento mustr nastavuje tón: jasný, praktický, prodejní a zároveň odborný. Další iterace může doplnit login,
+          platební bránu, reálné lekce, videa a klientský dashboard.
+        </p>
+        <a class="button button--primary" href="#top">Zpět nahoru</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 FIT VAULT · Vzdělávací obsah nenahrazuje lékařskou péči.</p>
+      <a href="#top">Nahoru</a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
