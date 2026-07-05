@@ -16,10 +16,10 @@
         <a class="brand" href="#top">FIT VAULT</a>
         <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
         <div class="nav__links" id="nav-links">
-          <a href="#start">Start</a>
-          <a href="#system">Systém</a>
-          <a href="#trenink">Trénink</a>
-          <a href="#jidlo">Jídlo</a>
+          <a href="#nastenka">Nástěnka</a>
+          <a href="lekce/nastaveni.html">Kcal kalkulačka</a>
+          <a href="lekce/jidlo.html">Jídlo</a>
+          <a href="lekce/trenink.html">Trénink</a>
           <a href="#zamky">Placený obsah</a>
         </div>
       </nav>
@@ -33,8 +33,8 @@
             spánek, evidence jídla a chytré využití AI. Bez chaosu, bez extrémů, s důrazem na měřitelný progres.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="#start">Začít 7denním plánem</a>
-            <a class="button button--ghost" href="#zamky">Ukázat zamčené lekce</a>
+            <a class="button button--primary" href="#nastenka">Otevřít nástěnku</a>
+            <a class="button button--ghost" href="lekce/nastaveni.html">Spočítat kcal a živiny</a>
           </div>
         </div>
         <aside class="score-card" aria-label="Rychlý přehled programu">
@@ -51,6 +51,24 @@
     </header>
 
     <main>
+      <section class="section dashboard" id="nastenka">
+        <div class="section__intro">
+          <p class="eyebrow">Úvodní nastavení a nástěnka</p>
+          <h2>Klient vidí, kde je, co má dělat dnes a kam pokračovat</h2>
+          <p>
+            Úvodní stránka funguje jako rozcestník členské zóny: nejdřív nastavit čísla, potom jídlo, trénink,
+            evidenci a regeneraci. Každý krok vede na samostatnou podstránku s konkrétním postupem.
+          </p>
+        </div>
+        <div class="dashboard__grid">
+          <a class="dashboard-card" href="lekce/nastaveni.html"><span>01</span><strong>Kcal + živiny</strong><small>Výdej, deficit, bílkoviny, tuky, sacharidy.</small></a>
+          <a class="dashboard-card" href="lekce/jidlo.html"><span>02</span><strong>Jídlo v praxi</strong><small>Jak vážit, zapisovat, číst etikety a plánovat.</small></a>
+          <a class="dashboard-card" href="lekce/trenink.html"><span>03</span><strong>Silový plán</strong><small>A/B trénink, progrese, technika a zátěž.</small></a>
+          <a class="dashboard-card" href="lekce/evidence.html"><span>04</span><strong>Evidence</strong><small>Váha, obvody, fotky, kroky a týdenní report.</small></a>
+          <a class="dashboard-card" href="lekce/regenerace.html"><span>05</span><strong>Regenerace</strong><small>Spánek, stres, suplementy a udržitelnost.</small></a>
+        </div>
+      </section>
+
       <section class="section" id="start">
         <div class="section__intro">
           <p class="eyebrow">Start bez zkoušení naslepo</p>
@@ -89,11 +107,11 @@
           <p>Každý modul vede klienta na další krok. Web může fungovat jako členská zóna, kde se lekce postupně odemykají.</p>
         </div>
         <div class="timeline">
-          <a href="#kalkulacka"><strong>Modul 1:</strong> výpočet příjmu, deficit a tempo hubnutí</a>
-          <a href="#jidlo"><strong>Modul 2:</strong> potraviny, makra, evidence a AI kontrola jídelníčku</a>
-          <a href="#trenink"><strong>Modul 3:</strong> silový plán A/B pro celé tělo</a>
-          <a href="#regenerace"><strong>Modul 4:</strong> spánek, stres, vitamíny a minerály</a>
-          <a href="#report"><strong>Modul 5:</strong> týdenní vyhodnocení a úpravy bez paniky</a>
+          <a href="lekce/nastaveni.html"><strong>Modul 1:</strong> výpočet příjmu, deficit a tempo hubnutí</a>
+          <a href="lekce/jidlo.html"><strong>Modul 2:</strong> potraviny, makra, evidence a AI kontrola jídelníčku</a>
+          <a href="lekce/trenink.html"><strong>Modul 3:</strong> silový plán A/B pro celé tělo</a>
+          <a href="lekce/regenerace.html"><strong>Modul 4:</strong> spánek, stres, vitamíny a minerály</a>
+          <a href="lekce/evidence.html"><strong>Modul 5:</strong> týdenní vyhodnocení a úpravy bez paniky</a>
         </div>
       </section>
 
